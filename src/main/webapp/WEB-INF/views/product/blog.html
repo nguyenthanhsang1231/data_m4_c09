@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+cc
+<div  th:each="item : ${list}" >
+    <input type="hidden" th:value="${item.id}">
+    <span th:text="${item.content}"></span>
+    <span th:text="${item.title}"></span>
+    <span th:text="${item.category.name}"></span>
+</div>
+123
+</body>
+</html>
